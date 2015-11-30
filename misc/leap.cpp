@@ -13,7 +13,7 @@ namespace
 		
 		cv::String const windowName[] = { "0", "1" };
 		
-		while (controller.isConnected())
+		for (;;)
 		{
 			Leap::Frame const frame = controller.frame(0);
 
